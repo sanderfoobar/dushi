@@ -1,0 +1,28 @@
+{
+  "name": "fa2 voor Chrome",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Wahed skeere internet",
+  "homepage_url": "https://github.com/xmdsc",
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_icon": "static/on.png",
+    "default_title": "Weeee"
+  },
+  "permissions": [
+    "https://*/*",
+    "http://*/*",
+    "tabs",
+    "background",
+    "storage"
+  ],
+  "web_accessible_resources": [
+    "build/dushi-em.wasm",
+    "build/inject.js"
+  ]
+}
